@@ -1,42 +1,43 @@
-<!DOCTYPE html>
-<html>
-		
+
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Tarea01. Venta de Vehiculos y de Accesorios</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript">
+		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript">
+		</script>
+		<style type="text/css">
+						body {
+                          padding-top: 51px;  
+                        }
+                        .text-center {
+                          padding-top: 20px;
+                        }
+                        .col-xs-12 {
+                          background-color: #fff;
+                        }
+                        #sidebar {
+                          height: 100%;
+                          padding-right: 0;
+                          padding-top: 20px;
+                        }
+                        #sidebar .nav {
+                          width: 95%;
+                        }
+                        #sidebar li {
+                          border:0 #f2f2f2 solid;
+                          border-bottom-width:1px;
+                        }
+                
+                          .row-offcanvas-right
+                          .sidebar-offcanvas {
+                            right: -41.6%;
+                          }
+       	</style>
 	</head>
-	<style type="text/css">
-			
-			body {
-			  padding-top: 51px;  
-			}
-			.text-center {
-			  padding-top: 20px;
-			}
-			.col-xs-12 {
-			  background-color: #fff;
-			}
-			#sidebar {
-			  height: 100%;
-			  padding-right: 0;
-			  padding-top: 20px;
-			}
-			#sidebar .nav {
-			  width: 95%;
-			}
-			#sidebar li {
-			  border:0 #f2f2f2 solid;
-			  border-bottom-width:1px;
-			}
-		
-			  .row-offcanvas-right
-			  .sidebar-offcanvas {
-			    right: -41.6%;
-			  }
-	</style>
 	<body>
 
 		<div class="page-container">
@@ -112,7 +113,7 @@
 								          		<ul class="dropdown-menu">
 										        	<li class="dropdown-submenu">
 										          	<li><a href="#">Menos de 600 cc.</a></li>
-									          		<li><a href="#">Menos de 800 cc.</a></li>
+									          		<li><a href="#">Menos de 800 cc.</a></li></li>
 									       		</ul>
 								            </li>
 								            <li class="dropdown-submenu">
@@ -123,11 +124,11 @@
 									          		<li><a href="#">250 cc.</a></li>
 									          		<li><a href="#">400 cc.</a></li>
 									          		<li><a href="#">600 cc.</a></li>
+									          		</li>
 									       		</ul>
 								            </li>
 								            <li><a tabindex="-1" href="#">Todoterreno</a></li>
-								         	<li><a tabindex="-1" href="#">Trial</a></li>
-								            
+								         	<li><a tabindex="-1" href="#">Trial</a></li>	
 								        </ul>
 								    </li>
 								    <li><a tabindex="-1" href="#">Caravanas</a></li> 
@@ -143,6 +144,7 @@
 								        	<li class="dropdown-submenu">
 								          	<li><a href="#">Menos de 20.000Km</a></li>
 							          		<li><a href="#">Menos de 40.000Km</a></li>
+							          	</li>
 							       		</ul>
 						    		</li>
 						    		<li class="dropdown-submenu">
@@ -151,6 +153,7 @@
 								        	<li class="dropdown-submenu">
 								          	<li><a href="#">Menos de 10.000Km</a></li>
 							          		<li><a href="#">Menos de 20.000Km</a></li>
+							          	</li>
 							       		</ul>
 						    		</li>
 								</ul>
@@ -167,6 +170,7 @@
 							          		<li><a href="#">Parasoles</a></li>
 							          		<li><a href="#">Alfombrillas</a></li>
 							          		<li><a href="#">Fundas</a></li>
+							          	</li>
 							       		</ul>
 						    		</li>
 						    		<li class="dropdown-submenu">
@@ -185,6 +189,7 @@
 													        <ul class="dropdown-menu">
 													        	<li class="dropdown-submenu">
 													          	<li><a href="#">De 9 a 36 Kg</a></li>
+													          </li>
 												       		</ul>
 											    		</li>
 											    		<li class="dropdown-submenu">
@@ -192,11 +197,12 @@
 													        <ul class="dropdown-menu">								<li><a href="#">De 15 a 36 Kg</a></li>
 															    <li><a href="#">Mas de 36 Kg</a></li>
 												       		</ul>
-											    		</li>
+											    		</li></li>
 											    	</ul>	
 
 							          		<li><a href="#">Protector puerta</a></li>
 							          		<li><a href="#">Triangulos de emergencia</a></li>
+							          	</li></li>
 							       		</ul>
 						    		</li>
 						    	</ul>
@@ -207,7 +213,7 @@
 							        <ul class="dropdown-menu">
 							          <li><a >Direccion: Avda San Fernando, 15 (Sevilla)</a></li>
 							          <li><a >Telefono: 958 69 58 23</a></li>
-							          <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d792.5817581237875!2d-5.99217607075135!3d37.382097598739584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c185db3bfcd%3A0xb0fa5bf467d85c39!2sCalle+San+Fernando%2C+15%2C+41004+Sevilla!5e0!3m2!1ses!2ses!4v1508604254431" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>Ubicacion</iframe></li>
+							          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d792.5817581237875!2d-5.99217607075135!3d37.382097598739584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c185db3bfcd%3A0xb0fa5bf467d85c39!2sCalleSanFernando%2C15%2C41004Sevilla!5e0!3m2!1ses!2ses!4v1508604254431" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
 									</ul>
 							</li>  
 						    <li class="dropdown-toggle">
