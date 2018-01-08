@@ -1,0 +1,230 @@
+
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+	<head>
+		<title>Tarea01. Venta de Vehiculos y de Accesorios</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../Pruebas/style.css" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript">
+		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript">
+		</script>
+
+	</head>
+	<body>
+		<div class="page-container">
+		    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		        <div class="container-fluid">
+			    	<div class="navbar-header">
+			            <a class="navbar-brand" href="#">Tarea01</a>
+			       		<form class="navbar-form navbar-left">
+		     				<div class="form-group">
+		       				 	<input type="text" class="form-control" placeholder="Buscar">
+		      				</div>
+		      				<button type="submit" class="btn btn-default">Enviar</button>
+	    				</form>
+			    	</div>
+		      	</div>
+		    </div>      
+		    <div class="container-fluid">
+			    <div class="row row-offcanvas row-offcanvas-left">
+			        
+			        <!-- sidebar -->
+			        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+			            <ul class="nav">
+				            <li class="active"><a href="#">Inicio</a></li>
+				            <li class="dropdown">
+						        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Vehiculos nuevos<span class="caret"></span></a>
+						        <ul class="dropdown-menu">
+							        <li class="dropdown-submenu">
+								       <a class="test" tabindex="-1" href="#">Automoviles <span class="caret"></span></a>
+								        <ul class="dropdown-menu">
+								        	<li class="dropdown-submenu">
+								          		<a class="test" href="#">Gasolina <span class="caret"></span></a>
+								          		<ul class="dropdown-menu">
+								          			<li class="dropdown-submenu">
+									              		<a class="test" href="#">Turismo <span class="caret"></span></a>
+									              		<ul class="dropdown-menu">
+											              	<li><a href="#">Cambio Manual</a></li>
+											              	<li><a href="#">Cambio Automatico</a></li>
+											            </ul>
+											        </li>
+									              <li><a href="#">Monovolumen</a></li>
+									              <li><a href="#">SUV</a></li>
+									              <li><a href="#">Todoterreno</a></li>
+								            	</ul>
+								            </li>
+
+								            <li class="dropdown-submenu">
+								          		<a class="test" href="#">Diesel <span class="caret"></span></a>
+									          	<ul class="dropdown-menu">
+									          		<li><a href="#">Turismo</a></li>
+									                <li class="dropdown-submenu">
+										              		<a class="test" href="#">Monovolumen <span class="caret"></span></a>
+										              		<ul class="dropdown-menu">
+												              	<li><a href="#">Cambio Manual</a></li>
+												              	<li><a href="#">Cambio Automatico</a></li>
+												            </ul>
+												        </li>
+										            <li><a href="#">SUV</a></li>
+										            <li><a href="#">Todoterreno</a></li>
+												</ul>
+									        </li>
+								         	<li><a tabindex="-1" href="#">Hibridos</a></li>
+								            <li><a tabindex="-1" href="#">Electricos</a></li>
+								        </ul>
+								    </li> 
+								    <li class="dropdown-submenu">
+								       <a class="test" tabindex="-1" href="#">Motos<span class="caret"></span></a>
+								        <ul class="dropdown-menu">
+								        	<li><a tabindex="-1" href="#">Ciclomotor</a></li>
+								            <li><a tabindex="-1" href="#">Custom</a></li>
+								            <li><a tabindex="-1" href="#">Chopper</a></li>
+								            <li><a tabindex="-1" href="#">Enduro</a></li>
+								        	<li class="dropdown-submenu">
+								          		<a class="test" href="#">Nacked<span class="caret"></span></a>
+								          		<ul class="dropdown-menu">
+										        	<li class="dropdown-submenu">
+										          	<li><a href="#">Menos de 600 cc.</a></li>
+									          		<li><a href="#">Menos de 800 cc.</a></li></li>
+									       		</ul>
+								            </li>
+								            <li class="dropdown-submenu">
+								          		<a class="test" href="#">Scooter<span class="caret"></span></a>
+								          		<ul class="dropdown-menu">
+										        	<li class="dropdown-submenu">
+										          	<li><a href="#">125 cc.</a></li>
+									          		<li><a href="#">250 cc.</a></li>
+									          		<li><a href="#">400 cc.</a></li>
+									          		<li><a href="#">600 cc.</a></li>
+									          		</li>
+									       		</ul>
+								            </li>
+								            <li><a tabindex="-1" href="#">Todoterreno</a></li>
+								         	<li><a tabindex="-1" href="#">Trial</a></li>	
+								        </ul>
+								    </li>
+								    <li><a tabindex="-1" href="#">Caravanas</a></li> 
+								</ul>
+							</li>
+				            <li class="dropdown">
+						        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Segunda Mano
+						        <span class="caret"></span></a>
+						        <ul class="dropdown-menu">
+							        <li class="dropdown-submenu">
+								        <a class="test" tabindex="-1" href="#">Automoviles <span class="caret"></span></a>
+								        <ul class="dropdown-menu">
+								        	<li class="dropdown-submenu">
+								          	<li><a href="#">Menos de 20.000Km</a></li>
+							          		<li><a href="#">Menos de 40.000Km</a></li>
+							          	</li>
+							       		</ul>
+						    		</li>
+						    		<li class="dropdown-submenu">
+								        <a class="test" tabindex="-1" href="#">Motos <span class="caret"></span></a>
+								        <ul class="dropdown-menu">
+								        	<li class="dropdown-submenu">
+								          	<li><a href="#">Menos de 10.000Km</a></li>
+							          		<li><a href="#">Menos de 20.000Km</a></li>
+							          	</li>
+							       		</ul>
+						    		</li>
+								</ul>
+							</li>
+				            <li class="dropdown">
+						        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Accesorios
+						        <span class="caret"></span></a>
+						        <ul class="dropdown-menu">
+							        <li class="dropdown-submenu">
+								        <a class="test" tabindex="-1" href="#">Accesorios de interior <span class="caret"></span></a>
+								        <ul class="dropdown-menu">
+								        	<li class="dropdown-submenu">
+								          	<li><a href="#">Separadores para perros</a></li>
+							          		<li><a href="#">Parasoles</a></li>
+							          		<li><a href="#">Alfombrillas</a></li>
+							          		<li><a href="#">Fundas</a></li>
+							          	</li>
+							       		</ul>
+						    		</li>
+						    		<li class="dropdown-submenu">
+								        <a class="test" tabindex="-1" href="#">Accesorios de seguridad <span class="caret"></span></a>
+								        <ul class="dropdown-menu">
+								        	<li class="dropdown-submenu">
+								          	<li><a href="#">Antirrobos</a></li>
+							          		<li><a href="#">Botiquines</a></li>
+							          		<li><a href="#">Separadores para perros</a></li>
+							          		<li class="dropdown-submenu">
+							          		<a class="test" tabindex="-1" href="#">Sillas niños<span class="caret"></span></a>
+							          			<ul class="dropdown-menu">
+								        			<li class="dropdown-submenu">
+								        				<li class="dropdown-submenu">
+													        <a class="test" tabindex="-1" href="#">Grupo 1,2 y 3<span class="caret"></span></a>
+													        <ul class="dropdown-menu">
+													        	<li class="dropdown-submenu">
+													          	<li><a href="#">De 9 a 36 Kg</a></li>
+													          </li>
+												       		</ul>
+											    		</li>
+											    		<li class="dropdown-submenu">
+													        <a class="test" tabindex="-1" href="#">Grupo3<span class="caret"></span></a>
+													        <ul class="dropdown-menu">
+																<li><a href="#">De 15 a 36 Kg</a></li>
+															    <li><a href="#">Mas de 36 Kg</a></li>
+												       		</ul>
+											    		</li></li>
+											    	</ul>	
+
+							          		<li><a href="#">Protector puerta</a></li>
+							          		<li><a href="#">Triangulos de emergencia</a></li>
+							          	</li></li>
+							       		</ul>
+						    		</li>
+						    	</ul>
+						    </li> 
+						    <li class="dropdown-toggle">
+							        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Informacion de Contacto
+							        <span class="caret"></span></a>
+							        <ul class="dropdown-menu">
+							          <li><a >Direccion: Avda San Fernando, 15 (Sevilla)</a></li>
+							          <li><a >Telefono: 958 69 58 23</a></li>
+							          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d792.5817581237875!2d-5.99217607075135!3d37.382097598739584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c185db3bfcd%3A0xb0fa5bf467d85c39!2sCalleSanFernando%2C15%2C41004Sevilla!5e0!3m2!1ses!2ses!4v1508604254431" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+									</ul>
+							</li>  
+						    <li class="dropdown-toggle">
+							        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Idiomas
+							        <span class="caret"></span></a>
+							        <ul class="dropdown-menu">
+							          <li><a href="#">Castellano</a></li>
+							          <li><a href="#">Ingles</a></li>
+									</ul>
+							</li>          
+			            </ul>
+			        </div>
+			  	
+			        <div class="col-xs-12 col-sm-9">
+			          <h1>Venta de Vehiculos y de Accesorios</h1>
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in nisi eu arcu tempus vehicula. 
+			            Nulla faucibus cursus metus in sagittis. Nunc elit leo, imperdiet in ligula in, euismod varius est. 
+			            Aenean pellentesque lorem a porttitor placerat. Vestibulum placerat nunc ac rutrum fringilla. Donec 
+			            arcu leo, tempus adipiscing volutpat id, congue in purus. Pellentesque scelerisque mattis nibh vel 
+			            semper. Sed a risus purus. Fusce pulvinar, velit eget rhoncus facilisis, enim elit vulputate nisl, a 
+			            euismod diam metus eu enim. Nullam congue justo vitae justo accumsan, sit amet malesuada nulla sagittis. 
+			            Nam neque tellus, tristique in est vel, sagittis congue turpis. Aliquam nulla lacus, laoreet dapibus 
+			            odio vitae, posuere volutpat magna. Nam pulvinar lacus in sapien feugiat, sit amet vestibulum enim 
+			            eleifend. Integer sit amet ante auctor, lacinia sem quis, consectetur nulla.</p>     
+			        </div>
+			    </div>
+		 	</div>
+		</div>
+		<script>
+		$(document).ready(function(){
+		  $('.dropdown-submenu a.test').on("click", function(e){
+		    $(this).next('ul').toggle();
+		    e.stopPropagation();
+		    e.preventDefault();
+		  });
+		});
+		</script>
+	</body>
+</html>

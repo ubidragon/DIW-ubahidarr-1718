@@ -1,0 +1,84 @@
+* {
+    font-family:sans-serif;
+    list-style:none;
+    text-decoration:none;
+
+
+
+
+}
+
+#botones{
+   padding-top: 3em;
+    padding-right: 2em;
+    padding-left: 2em;
+
+    height: 5em;
+
+}
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background:#EB974E;
+    color:#6C7A89;
+    display:block;
+    border:1px solid;
+
+}
+
+.nav li a:hover {
+    background:#EB974E;;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0;
+
+}
+
+.Site {
+    display: flex;
+    min-height: 200vh;
+    flex-direction: column;
+    background-color: #DADFE1;
+
+}
+
+.Site-content {
+
+    flex: 1;
+    padding-top: 12em;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+footer{
+
+    background-color: #cccccc;
+    padding-right: 2em;
+
+}
+
+#logoPortada{
+    display: block;
+    margin: auto;
+    padding: 3em;
+}
+
+

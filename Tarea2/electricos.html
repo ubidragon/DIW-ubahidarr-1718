@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 2</title>
+    <link rel="stylesheet" href="Tarea_2.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body class="Site">
+<!--
+Colores:
+Grises:Lynch #6C7A89, Iron #DADFE1
+Naranja:Sea Buckthorn #EB974E
+-->
+<header id="cabecera">
+
+    <!--Botones de menu-->
+
+    <div class="row " id="botones">
+        <div class="col-md-2">
+            <a href="Tarea2.html"><img src="resources/logo.png" height="100" width="100"></a>
+        </div>
+        <div class="col-md-6">
+            <ul class="nav">
+                <li><a href="Tarea2.html">Inicio</a></li>
+                <li><a href="vehiculos_nuevos.html">Vehiculos nuevos</a>
+                    <ul>
+                        <li><a href="">Automoviles</a>
+                            <ul>
+                                <li><a href="">Gasolina</a>
+                                    <ul>
+                                        <li><a href="">Turismo </a>
+                                            <ul>
+                                                <li><a href="">Cambio Manual</a></li>
+                                                <li><a href="">Cambio Automatico</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Monovolumen</a></li>
+                                        <li><a href="">SUV</a></li>
+                                        <li><a href="">Todoterreno</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Diesel</a>
+                                    <ul>
+                                        <li><a href="">Turismo </a></li>
+                                        <li><a href="">Monovolumen</a>
+                                            <ul>
+                                                <li><a href="">Cambio Manual</a></li>
+                                                <li><a href="">Cambio Automatico</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">SUV</a></li>
+                                        <li><a href="">Todoterreno</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="hibridos.html">Hibridos</a></li>
+                                <li><a href="electricos.html">Electricos</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="">Motos</a>
+                            <ul>
+                                <li><a href="">Ciclomotor</a></li>
+                                <li><a href="">Custom</a></li>
+                                <li><a href="">Chopper</a></li>
+                                <li><a href="">Enduro</a></li>
+                                <li><a href="">Nacked</a>
+                                    <ul>
+                                        <li><a href="#">Menos de 600 cc.</a></li>
+                                        <li><a href="#">Menos de 800 cc.</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Scooter</a>
+                                    <ul>
+                                        <li><a href="#">125 cc.</a></li>
+                                        <li><a href="#">250 cc.</a></li>
+                                        <li><a href="#">400 cc.</a></li>
+                                        <li><a href="#">600 cc.</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="">Trial</a></li>
+                                <li><a href="">Todoterreno</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Caravanas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="segunda_mano.html">Segunda Mano</a>
+                    <ul>
+                        <li><a href="segunda_mano.html">Automoviles</a>
+                            <ul>
+                                <li><a href="">Menos de 20.000Km</a></li>
+                                <li><a href="">Menos de 40.000Km</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Motos</a>
+                            <ul>
+                                <li><a href="">Menos de 10.000Km</a></li>
+                                <li><a href="">Menos de 20.000Km</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="accesorios.html">Accesorios</a>
+                    <ul>
+                        <li><a href="#">Accesorios de interior</a>
+                            <ul>
+                                <li><a href="#">Separadores para perros</a></li>
+                                <li><a href="#">Parasoles</a></li>
+                                <li><a href="#">Alfombrillas</a></li>
+                                <li><a href="#">Fundas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Accesorios de seguridad</a>
+                            <ul>
+                                <li><a href="#">Antirrobos</a></li>
+                                <li><a href="#">Botiquines</a></li>
+                                <li><a href="#">Separadores para perros</a></li>
+                                <li><a href="#">Sillas niños</a>
+                                    <ul>
+                                        <li><a href="#">Grupo 1, 2 y 3</a>
+                                            <ul>
+                                                <li><a href="#">De 9 a 36 Kg</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Grupo 3</a>
+                                            <ul>
+                                                <li><a href="#">De 15 a 36 Kg</a></li>
+                                                <li><a href="#">Mas de 36 Kg</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Protector puerta</a></li>
+                        <li><a href="#">Triangulos de emergencia</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+        <!--Barra de busqueda-->
+        <div class="col-md-3">
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--Botones de idiomas-->
+        <div class="col-md-1">
+            <ul class="nav">
+                <li><a href="">Idiomas<span class="glyphicon glyphicon-globe"></span></a>
+                    <ul>
+                        <li><a href="">Español</a></li>
+                        <li><a href="">Ingles</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+</header>
+<!-- Cuerpo de la web-->
+<main class="Site-content">
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="resources/hibridos.png" width="300" height="300">
+                    </div>
+                    <div class="col-md-8">
+                        <h1>Hibridos</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in nisi eu arcu tempus
+                            vehicula.
+                            Nulla faucibus cursus metus in sagittis. Nunc elit leo, imperdiet in ligula in, euismod
+                            varius est.
+                            Aenean pellentesque lorem a porttitor placerat. Vestibulum placerat nunc ac rutrum
+                            fringilla. Donec
+                            arcu leo, tempus adipiscing volutpat id, congue in purus. Pellentesque scelerisque mattis
+                            nibh vel
+                            semper. Sed a risus purus. Fusce pulvinar, velit eget rhoncus facilisis, enim elit vulputate
+                            nisl, a
+                            euismod diam metus eu enim. Nullam congue justo vitae justo accumsan, sit amet malesuada
+                            nulla sagittis.
+                            Nam neque tellus, tristique in est vel, sagittis congue turpis. Aliquam nulla lacus, laoreet
+                            dapibus
+                            odio vitae, posuere volutpat magna. Nam pulvinar lacus in sapien feugiat, sit amet
+                            vestibulum enim
+                            eleifend. Integer sit amet ante auctor, lacinia sem quis, consectetur nulla.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="column">
+                <p align="center" id="logoPortada">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <img src="resources/model-s.png" width="100%" height="100%">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="resources/zoe.png" width="100%" height="100%">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="resources/leaf.png" width="100%" height="100%">
+                    </div>
+                </div>
+                </p>
+            </div>
+            <div class="column">
+
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Una berlina que no deja indiferente a nadie y ostenta el titulo del coche eléctrico de
+                            producción con
+                            mayor autonomía del mercado. Disponible en 3 modelos según su paquetes de baterías, uno de
+                            75 kWh,
+                            90 kWh y 100 kWh de capacidad.
+
+                            El modelo base (75 kWh) tiene tracción trasera, una autonomía de 480 km (NEDC) y una
+                            aceleración de
+                            0 a 100 km/h en 5.8 segundos. La versión con tracción total (75D) tiene una autonomía de 490
+                            km
+                            (NEDC) y una aceleración de 0 a 100 km/h en 5.4 segundos, mientras que el modelo con la
+                            batería de
+                            90 kWh tienen tracción total y acelera de 0 a 100 km/h en 4.4 segundos con una autonomía de
+                            557 km.
+                            La versión de 100 kWh goza de 632 km de autonomía, a´si como una aceleración en 4,4
+                            segundos,
+                            mientras que el P100D llega hasta los 613 km y se catapulta en solo 2,7 segundos. </p>
+                        <h3 align="center">Desde 109.050 euros</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <p>El Renault Zoe es un compacto eléctrico que destaca por sus 400 km de autonomía según ciclo
+                            NEDC.
+
+                            Disponible en cuatro niveles de precios y acabados, se presenta como el primer eléctrico
+                            dispuesto a luchar de tu a tu con el Nissan Leaf. Está disponible con batería en propiedad o
+                            en opción de alquiler.
+
+                            En su apartado técnico monta un motor eléctrico de corriente alterna de 92 CV de potencia,
+                            una batería de Iones de Litio de 41kWh de capacidad, velocidad máxima limitada a 135 km/h y
+                            una aceleración de 0 a 100 en 12 segundos.</p>
+                        <h3 align="center">Desde 29.225 euros</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <p>La nueva generación del Nissan Leaf llega con un cambio en su diseño y con más potencia y
+                            capacidad de sus baterías.
+
+                            Tiene 150 CV de potencia y 40 kWh de capacidad, lo que se traduce en 378 km de autonomía en
+                            ciclo NEDC.</p>
+                        <h3 align="center">Desde 31.805 euros</h3>
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!--Pie de pagina-->
+<footer>
+
+    <div class="row">
+        <div class="col-sm-4" align="center">
+
+            Contacto
+
+            <li>Direccion: Avda San Fernando, 15 (Sevilla)</li>
+            <li>Telefono: 958 69 58 23</li>
+
+
+        </div>
+        <div class="col-sm-8" align="right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3170.327015530818!2d-5.991629!3d37.382098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c185db3bfcd%3A0xb0fa5bf467d85c39!2sCalle+San+Fernando%2C+15%2C+41004+Sevilla!5e0!3m2!1ses!2ses!4v1512413437807"
+                    width="600" height="300" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    </div>
+
+
+</footer>
+
+</body>
+</html>
