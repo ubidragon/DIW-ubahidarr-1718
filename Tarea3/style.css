@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    width: 90%;
+	margin: auto;
+}
+.encabezado{
+    background-color:burlywood;
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 1em;
+    height: 5em;
+}
+#logo{
+   
+    float:left;
+    width: 5.25em;
+    height: 5.25em
+   
+    
+}
+#titulo{
+    padding: 0.47em;
+    float: center;
+    background-color: #FFE; 
+    font-size: 2.5em;
+    
+}
+.menu{
+    padding: 2em;
+    background-color: #FEA; 
+    display: flex;
+    
+}
+/*
+.menu ul{
+    list-style: none;
+    
+}
+.menu li{
+    display: inline;
+    float: left;
+}
+
+.menu ul li{
+    display: block;
+    float:left;
+    position: inline;
+}
+
+.menu ul li a{
+    display: block;
+}
+.menu ul li:hover > ul {
+ display:block;
+}
+*/
+.formulario{
+    width:60%;
+    align-content: center;
+   margin: 5% 50% 0% 35%; 
+  text-align: justify;
+    clear:both;    
+}
+legend{
+     font-size: 3em;
+}
+.datos{
+     font-size: 1.35em;
+    text-align: left;
+    display: flex;
+    float: 
+}
+#izquierda{
+    width:80%;
+    
+    display: block;
+    
+}
+input{
+    height: 1.45em;
+    width: 100%;
+}
+textarea{
+    margin-top:0.5em;
+    width: 100%;
+}
+#enviar{
+    width: 100%;
+    height: 3em;     
+}
+footer{
+    
+	margin-top: 2em;
+	background-color: white;
+	
+	padding: 1em;
+	text-align: center;
+    font-size: 1.25em;
+}
