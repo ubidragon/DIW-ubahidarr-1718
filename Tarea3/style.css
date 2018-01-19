@@ -1,42 +1,109 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: antiquewhite;
     font-family: sans-serif;
-    
-	margin:1.5em;
+	margin:0 1.5em 0 1.5em;
 }
 .encabezado{
     background-color:burlywood;
-    text-align: center;
     display: block;
-    margin: auto;
+     margin:0 0.5em 0 0.5em;
     padding: 1em;
-    height: 5em;
+    height: 6em;
+    position: sticky;
 }
 #logo{
    
     float:left;
-    width: 5.25em;
-    height: 5.25em
+    width: 3.75em;
+    height: 3.75em;
    
     
 }
 #titulo{
-    padding: 0.47em;
+    text-align: center;
+    height: 1.5em;
     float: center;
     background-color: #FFE; 
     font-size: 2.5em;
+    line-height: 1.5em;
+   
     
 }
-.menu{
-    padding: 2em;
+.menu {
+     background-color: #FEA;
+     margin:0 0.5em 0 0.5em;
+    text-align: center;
+    padding: 1em;
+   
+}/**
+.menu ul > li{
+    display: inline-block;
+    float: left;
+     width: 25%;
+    height: 2.5em;
+    line-height: 2.25em;
+    text-align:center;
+    position: relative;
+}**/
+/*Esto funciona para todos los li del menu*/
+.menu li{
+    list-style-type: none;
+    display: block;
+}
+
+
+.menu > ul{
+   padding: 1em;
+    display: inline-block;
+    position: relative;
+    width: 25%;
+}
+
+.submenu{
+   position: absolute;
+   background-color: white;
+   margin-top: 1em; /* padding dado a los primeros li */
+   margin-left: -1em; /* Resto el padding lateral de los primeros li. Para poder centrar este contenedor*/
+   padding: 0.5em 1em;
+ display: none; 
+}
+.submenu > li > ul{
+   display:inline-block;
+    position: relative;
+}
+
+/**
+.menu ul > li{
+    padding: 1em;
+   
+    display: inline-block;
+    float: left;
+     width: 25%;
+    text-align:justify;
+    position: relative;
+}
+.menu ul > ul {
+    width: 100%;
+    display:none;
+    overflow: hidden;
+    margin: 1em; 
+    position: relative;
+}
+
+.menu ul > li{
+    padding: 1em;
     background-color: #FEA; 
-    display: flex;
-    
-}
+    display: inline-block;
+    float: left;
+     width: 25%;
+    text-align:justify;
+    position: relative;
+}**/
 /*
 .menu ul{
     list-style: none;
@@ -61,21 +128,21 @@ body{
 }
 */
 #seccion{
-     margin-top: 0.5em;
-    width: 66%;
-  border-style: ridge;
+    margin: 0.5em 0 0 0.5em;
+    width: calc(76% - 0.5em);
+    border-style: ridge;
     border-color: bisque;
-float:left;
+    float:left;
 }
 .articulo{
-    height:10em;
+    height:6em;
     overflow-y: auto;
     margin:0.5em;
     border-style: groove;
 }
 .barralateral{
-    width:32%;
-    margin-top: 0.5em;
+   width: calc(23% - 0.5em);
+    margin: 0.5em 0.5em 0 0.5em;
     border-style: ridge;
     border-color: bisque;
     float:right;
