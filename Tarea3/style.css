@@ -1,47 +1,66 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    background-color: antiquewhite;
     font-family: sans-serif;
-	margin:0 1.5em 0 1.5em;
 }
-.encabezado{
-    background-color:burlywood;
+
+body {
+    background-color: antiquewhite;
+    margin: 0 1.5em 0 1.5em;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    margin: 0.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.encabezado {
+    background-color: burlywood;
     display: block;
-     margin:0 0.5em 0 0.5em;
+    margin: 0 0.5em 0 0.5em;
     padding: 1em;
     height: 6em;
     position: sticky;
 }
-#logo{
-   
-    float:left;
+
+#logo {
+
+    float: left;
     width: 3.75em;
     height: 3.75em;
-   
-    
+
+
 }
-#titulo{
+
+#titulo {
     text-align: center;
     height: 1.5em;
     float: center;
-    background-color: #FFE; 
+    background-color: #FFE;
     font-size: 2.5em;
     line-height: 1.5em;
-   
-    
+
+
 }
+
 .menu {
-     background-color: #FEA;
-     margin:0 0.5em 0 0.5em;
+    background-color: #FEA;
+    margin: 0 0.5em 0 0.5em;
     text-align: center;
-   
-    
-   
-}/**
+
+
+
+}
+
+/**
 .menu ul > li{
     display: inline-block;
     float: left;
@@ -51,52 +70,60 @@ body{
     text-align:center;
     position: relative;
 }**/
+
 /*Esto funciona para todos los li del menu*/
-.menu li{
+
+.menu li {
     list-style-type: none;
-   
+
 }
 
-
-.menu > ul{
-   padding: 1em;
+.menu > ul {
+    padding: 1em;
     position: relative;
-    
+
 }
 
 .menu > ul > li {
     /*CAMBIAR ESTO A INLINE-BLOCK LO CAMBIE A NONE PARA PODER CONFIGURAR EL ACORDEON**/
-    display: none;
-    width:25%;
+    display: inline-block;
+    width: 25%;
     margin-left: -1em;
-   
+
 }
 
-.submenu{
-   position:absolute;
-   background-color: white;
-   margin-top: 2em; /* padding dado a los primeros li */
-   margin-left: -1em; /* Resto el padding lateral de los primeros li. Para poder centrar este contenedor*/
-   padding: 0.5em 1em;
-  display:block;
-    width: 25%
- 
-}
-.submenu > li{
+.submenu {
+    position: absolute;
+    background-color: white;
+    margin-top: 2em;
+    /* padding dado a los primeros li */
+    margin-left: -1em;
+    /* Resto el padding lateral de los primeros li. Para poder centrar este contenedor*/
+    padding: 0.5em 1em;
     display: block;
+    width: 25%;
+
 }
 
-.submenu > li > ul{
+.submenu > li {
+    display: block;
+
+}
+
+.subsubmenu > li {
     margin-left: -15em;
     position: relative;
-    display: inline;
+    display: block;
     float: right;
-   
-}
-.submenu > li > ul > li{
-   
+    overflow: hidden;
+    -webkit-transition: height 0.2s;
+
+
 }
 
+.submenu > li > ul > li {}
+
+.submenu:hover .subsubmenu {}
 
 /**
 .menu ul > li{
@@ -125,6 +152,7 @@ body{
     text-align:justify;
     position: relative;
 }**/
+
 /*
 .menu ul{
     list-style: none;
@@ -148,117 +176,207 @@ body{
  display:block;
 }
 */
-#seccion{
-    margin: 0.5em 0 0 0.5em;
-    width: calc(76% - 0.5em);
+
+section {
+
+    width:76%;
     border-style: ridge;
     border-color: bisque;
-    float:left;
+    float: left;
+    min-height: 1em;
     height: 100%;
 }
-#imgAutor{
-    margin: 15% 5% 0% 6%;
-    width:38%;
-    height: 15em;
-}
-#imgAutora{
 
-    width:38%;
-    height: 15em;
-    margin: 15% 5% 0% 6%;
+.container {
+    position: relative;
+    margin: 0.5em 25% 0.5em 25%;
+    width: 50%;
+    border-style: ridge;
+    border-color: bisque;
+    overflow-y: auto;
+    cursor: pointer;
+
 }
-#picAutor{
-   /*  estos valores para definir el tamaño de tu círculo */
+
+.autor a {
+
+    margin: 1em;
+    width: calc(50% - 2em);
+    display: inline-block;
+    float: left;
+}
+
+#picAutor {
+    /*  estos valores para definir el tamaño de tu círculo */
     height: 10em;
     width: 10em;
     /* lo siguiente es para definir la curvatura del circulo */
     border-radius: 50%;
-  
+
 }
-.articulo{
-    height:6em;
+
+.articulo {
+    height: 10em;
     overflow-y: auto;
-    margin:0.5em;
+    margin: 0.5em;
     border-style: groove;
 }
 
-.poema{
-   
-    overflow: hidden;
-    max-height: 2em;
-    
+#picArticulo {
+    width: 5em;
+    height: 5em;
+    float: left;
+    border-radius: 10em;
 }
+
+.nombrePoema {
+
+    margin: 0.5em;
+    line-height: 1em;
+    height: 1em;
+    text-align: center;
+}
+
+.poema {
+    text-align: center;
+    height: 0em;
+    overflow: hidden;
+    transition: height 0.2s;
+}
+
+.container:hover .poema {
+    overflow-y: scroll;
+    height: 10em;
+}
+
 /**Contenido de la barra lateral**/
-#picAutor{
-   /*  estos valores para definir el tamaño de tu círculo */
+
+.picAutor {
+    /*  estos valores para definir el tamaño de tu círculo */
     height: 10em;
     width: 10em;
     /* lo siguiente es para definir la curvatura del circulo */
     border-radius: 50%;
-  
+
 }
-.barralateral{
-   width: calc(23% - 0.5em);
-    margin: 0.5em 0.5em 0 0.5em;
+
+.barralateral {
+    width: 24%;
+
     border-style: ridge;
     border-color: bisque;
-    float:right;
+    float: right;
     text-align: center;
-    height: 100%;
+    min-height: 100%;
 }
-.compraLibro{
-    margin:0.5em;
+
+.compraLibro {
+    margin: 0.5em;
     border-style: ridge;
     border-color: bisque;
 }
-#picAside{
+
+#picAside {
     height: 8em;
-    
+
 }
+
 /**Formulario de la web**/
-.formulario{
-    width:60%;
+
+.formulario {
+    width: 60%;
     align-content: center;
-   margin: 5% 20% 0% 20%; 
-  text-align: justify;
-    clear:both;    
+    margin: 5% 20% 0% 20%;
+    text-align: justify;
+    clear: both;
 }
-legend{
-     font-size: 3em;
+
+legend {
+    font-size: 3em;
 }
-.datos{
-     font-size: 1.35em;
+
+.datos {
+    font-size: 1.35em;
     text-align: left;
     display: flex;
-    float: 
+
 }
-#izquierda{
-    width:80%;
-    
+
+#izquierda {
+    width: 80%;
+
     display: block;
-    
+
 }
-input{
+
+input {
     height: 1.45em;
     width: 100%;
 }
-textarea{
-    margin-top:0.5em;
+
+textarea {
+    margin-top: 0.5em;
     width: 100%;
 }
-#enviar{
+
+#enviar {
     width: 100%;
-    height: 3em;     
+    height: 3em;
 }
+
 /**Footer de la web**/
-footer{
-    /*No funciona que el footer */
-   
-    bottom: 0;
-	width:100%;
-	background-color: white;
-	position: absolute;
-	padding: 1.5em;
-	text-align: center;
+
+footer {
+    margin-left: -1.5em;
+    margin-top: 1em;
+    width: calc(100% + 3em);
+    background-color: white;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
     font-size: 1.25em;
+}
+
+@media only screen and (max-width:768px) {
+
+    section {
+
+        width: 100%;
+        border-style: ridge;
+        border-color: bisque;
+        float: left;
+        min-height: 1em;
+        height: 100%;
+    }
+
+    /**Contenido de la barra lateral**/
+    .picAutor {
+        /*  estos valores para definir el tamaño de tu círculo */
+        height: 10em;
+        width: 10em;
+        /* lo siguiente es para definir la curvatura del circulo */
+        border-radius: 50%;
+
+    }
+
+    .barralateral {
+        width: 100%;
+
+        border-style: ridge;
+        border-color: bisque;
+        float: right;
+        text-align: center;
+        min-height: 100%;
+    }
+
+    .compraLibro {
+        margin: 0.5em;
+        border-style: ridge;
+        border-color: bisque;
+    }
+
+    #picAside {
+        height: 8em;
+
+    }
 }
