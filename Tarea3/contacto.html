@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Poemas para recordar</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>Poemas para recordar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <header class="encabezado">
-        <img src="media/logo_jpg.jpg"  id="logo">
+        <img src="media/logo_jpg.jpg" id="logo">
         <div id="titulo">Poemas para recordar
         </div>
-        
-    </header> 
+
+    </header>
     <nav class="menu">
         <ul>
-        <li><a href="">Poemas</a>
-            <ul class="submenu">
-                <li><a href="">de amor</a></li>
-                <li><a href="">de desamor</a></li>
-                <li><a href="">de traici&oacute;n</a></li>
-            </ul>
-        </li>
-        <li><a href="">Autores</a>
-            <ul class="submenu">
-                <li><a href="">Poetas</a>
-                    <ul>
-                    <li><a href="">Mario Benedetti</a></li>
-                    <li><a href="">Federico Garcia Lorca</a></li>                    
-                    </ul>
-                </li>
-                <li><a href="">Poetisas</a>
-                    <ul>
-                    <li><a href="">Alfonsina Storni</a></li>
-                    <li><a href="">Juana de Ibarbourou</a></li>                    
-                    </ul>
-                </li>                    
-            </ul>
-        </li>  
-        <li><a href="">Qui&eacute;nes somos</a></li>
-        <li><a href="">Contacto</a></li> 
+            <li><a href="">Poemas</a>
+                <ul class="submenu">
+                    <li><a href="">de amor</a></li>
+                    <li><a href="">de desamor</a></li>
+                    <li><a href="">de traici&oacute;n</a></li>
+                </ul>
+            </li>
+            <li><a href="autores.html">Autores</a>
+                <ul class="submenu">
+                    <li><a href="">Poetas</a>
+                        <ul class="subsubmenu">
+                            <li><a href="benedetti.html">Mario Benedetti</a></li>
+                            <li><a href="lorca.html">Federico Garcia Lorca</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Poetisas</a>
+                        <ul class="subsubmenu">
+                            <li><a href="storni.html">Alfonsina Storni</a></li>
+                            <li><a href="juana.html">Juana de Ibarbourou</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Qui&eacute;nes somos</a></li>
+            <li><a href="">Contacto</a></li>
         </ul>
     </nav>
-    <form class="formulario">
-       
-    <legend>CONTACTO</legend>
-        <div class="datos">
-        <div class="izquierda">
-             Nombre:<br>
-             Correo electr&oacute;nico: <br>
-             Asunto:<br>
-            Mensaje:
-        </div>
-        <div class="derecha">
-       <input type="text" name="nombre" placeholder="Nombre Apellidos"><br>
-       <input type="email" name="email" placeholder="Email"><br>
-        <input type="text" name="nombre" placeholder="Asunto"><br>
-         <textarea name="message" rows="5" cols="50">
-        </textarea><br>
-               </div>
-        </div>
-         
-     <input type="submit" value="ENVIAR" id="enviar">
-    </form>
-    <footer><a href="">Formulario de contacto</a></footer> 
+    <main>
+        <form class="formulario">
+
+            <legend>CONTACTO</legend>
+            <div class="datos">
+                <label for="Nombre">
+                    Nombre:
+                </label>
+                <input type="text" name="nombre" placeholder="Nombre Apellidos">
+
+                <label for="Email">
+                    Correo Electronico:
+                </label>
+                <input type="email" name="email" placeholder="Email">
+
+                <label for="Asunto">
+                    Asunto:
+                </label>
+                <input type="text" name="nombre" placeholder="Asunto">
+
+                <label for="Mensaje">
+                    Mensaje:
+                </label>
+                <textarea name="message" rows="5" cols="50"></textarea>
+
+
+            </div>
+
+            <input type="submit" value="ENVIAR" id="enviar">
+        </form>
+    </main>
+    <footer><a href="">Formulario de contacto</a></footer>
 </body>
+
 </html>

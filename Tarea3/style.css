@@ -16,6 +16,7 @@ body {
 main {
     flex: 1;
     margin: 0.5em;
+    overflow: hidden;
 }
 
 img {
@@ -53,10 +54,9 @@ img {
 
 .menu {
     background-color: #FEA;
-    margin: 0 0.5em 0 0.5em;
+    margin: 0 0.5em;
     text-align: center;
-
-
+    z-index: 9;
 
 }
 
@@ -74,112 +74,64 @@ img {
 /*Esto funciona para todos los li del menu*/
 
 .menu li {
+    position: relative;
     list-style-type: none;
-
 }
 
 .menu > ul {
-    padding: 1em;
+    height: 3em;
+    line-height: 3em;
     position: relative;
-
 }
 
 .menu > ul > li {
-    /*CAMBIAR ESTO A INLINE-BLOCK LO CAMBIE A NONE PARA PODER CONFIGURAR EL ACORDEON**/
-    display: inline-block;
+    position: relative;
     width: 25%;
-    margin-left: -1em;
-
+    float: left;
 }
+
+/*Segundo nivel del menu*/
 
 .submenu {
     position: absolute;
     background-color: white;
-    margin-top: 2em;
-    /* padding dado a los primeros li */
-    margin-left: -1em;
-    /* Resto el padding lateral de los primeros li. Para poder centrar este contenedor*/
-    padding: 0.5em 1em;
-    display: block;
-    width: 25%;
-
+    display: none;
+    width: 100%;
 }
 
 .submenu > li {
-    display: block;
-
-}
-
-.subsubmenu > li {
-    margin-left: -15em;
     position: relative;
     display: block;
-    float: right;
-    overflow: hidden;
-    -webkit-transition: height 0.2s;
-
-
 }
 
-.submenu > li > ul > li {}
+/*Tercer nivel del menu*/
 
-.submenu:hover .subsubmenu {}
+.subsubmenu {
+    position: absolute;
+    /*Le restamos el padding del menu inmediatamente superior*/
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    background-color: white;
+    display: none;
+}
 
-/**
-.menu ul > li{
-    padding: 1em;
-   
+.menu li:hover .submenu {
+
+    display: block;
+}
+
+/*Apuntamos a un li que es el padre dl subsubmenu para que no se habran todos los subsubmenus sino solo los asociados a cada li*/
+
+.submenu li:hover .subsubmenu {
+
     display: inline-block;
-    float: left;
-     width: 25%;
-    text-align:justify;
-    position: relative;
-}
-.menu ul > ul {
-    width: 100%;
-    display:none;
-    overflow: hidden;
-    margin: 1em; 
-    position: relative;
 }
 
-.menu ul > li{
-    padding: 1em;
-    background-color: #FEA; 
-    display: inline-block;
-    float: left;
-     width: 25%;
-    text-align:justify;
-    position: relative;
-}**/
-
-/*
-.menu ul{
-    list-style: none;
-    
-}
-.menu li{
-    display: inline;
-    float: left;
-}
-
-.menu ul li{
-    display: block;
-    float:left;
-    position: inline;
-}
-
-.menu ul li a{
-    display: block;
-}
-.menu ul li:hover > ul {
- display:block;
-}
-*/
+/*Seccion principal de la pagina*/
 
 section {
-
-    width:76%;
+    width: 76%;
     border-style: ridge;
     border-color: bisque;
     float: left;
@@ -187,13 +139,15 @@ section {
     height: 100%;
 }
 
+/*contenedor que encierra a los articulos, imagenes autores y a los poemas*/
+
 .container {
     position: relative;
     margin: 0.5em 25% 0.5em 25%;
     width: 50%;
     border-style: ridge;
     border-color: bisque;
-    overflow-y: auto;
+    /*Esto sirve para que cambie el cursor y salga una mano*/
     cursor: pointer;
 
 }
@@ -228,6 +182,8 @@ section {
     float: left;
     border-radius: 10em;
 }
+
+/*Estructura del Poema*/
 
 .nombrePoema {
 
@@ -283,12 +239,12 @@ section {
 
 /**Formulario de la web**/
 
-.formulario {
+form {
     width: 60%;
     align-content: center;
     margin: 5% 20% 0% 20%;
     text-align: justify;
-    clear: both;
+
 }
 
 legend {
@@ -298,25 +254,26 @@ legend {
 .datos {
     font-size: 1.35em;
     text-align: left;
-    display: flex;
-
+    display: inline-block;
 }
 
-#izquierda {
-    width: 80%;
-
-    display: block;
-
+label {
+    width: 40%;
+    float: left;
+    clear: right;
 }
 
 input {
     height: 1.45em;
-    width: 100%;
+    width: 60%;
+
+
+
 }
 
 textarea {
     margin-top: 0.5em;
-    width: 100%;
+    width: 60%;
 }
 
 #enviar {
@@ -338,7 +295,25 @@ footer {
 }
 
 @media only screen and (max-width:768px) {
+    #titulo {
+        text-align: center;
+        height: 100%;
+        float: center;
+        background-color: #FFE;
+        font-size: 1em;
+        padding-top: 1em;
 
+
+    }
+
+    #logo {
+
+        float: left;
+        width: 3.75em;
+        height: 100%;
+
+
+    }
     section {
 
         width: 100%;
@@ -379,4 +354,19 @@ footer {
         height: 8em;
 
     }
+
+    form {
+        margin:0;
+        width: 100%;
+        align-content: center;
+        text-align: justify;
+    }
+
+    .datos label,
+    .datos input,
+    .datos textarea {
+        width: 100%;
+    }
+
+
 }
